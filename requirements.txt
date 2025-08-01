@@ -1,0 +1,17 @@
+# --- Core Frameworks ---
+streamlit
+fastapi
+uvicorn
+
+# --- LangChain and Groq ---
+langchain
+langchain-groq
+
+# --- Dotenv for env vars ---
+python-dotenv
+
+# --- Optional: Better type support ---
+pydantic
+
+# --- HTTP client for testing (if needed) ---
+httpx
