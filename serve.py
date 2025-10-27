@@ -10,10 +10,10 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 # Get API key
-groq_api_key = st.secrets["GROQ_API_KEY"]
+groq_api_key = os.getenv("GROQ_API_KEY")
 
 # ⚠️ Replace with a currently supported model
-model = ChatGroq(model="llama3-8b-8192", groq_api_key=groq_api_key)
+model = ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
 
 # Prompt template
 system_template = "Translate the following into {language}:"
